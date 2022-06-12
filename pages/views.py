@@ -1,8 +1,16 @@
 from django.shortcuts import render
-
-# Create your views here.
-
 from django.http import HttpResponse
 
-def home_page_view(request):
-    return HttpResponse('Hello Dhanchi!')
+
+def home(request):
+    return render(request, 'index.html')
+
+# def about(request):
+#     return render(request, 'index.html')
+
+# def contact(request):
+#     form = contactForm()
+#     context = {
+#         'form':form,
+#     }
+#     return render(request, "contact.html", context)
