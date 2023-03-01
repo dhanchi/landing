@@ -135,3 +135,20 @@ STATICFILES_FINDERS = [
 ]
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')#new
+
+# SENDGRID_API_KEY= os.environ.get('SENDGRID_API_KEY') #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'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# Twilio SendGrid
+# CONTACT_EMAIL = 'dhanchillc@gmail.com'
+# ADMIN_EMAILS = ['dhanchillc+admin@gmail.com','prsnn.paudyal@gmail.com','dadhikari32@gmail.com','roshyara.prashant@gmail.com']
+
+
+EMAIL_HOST= 'smtp.gmail.com'
+EMAIL_HOST_USER= 'dhanchillc+admin@gmail.com' #,'prsnn.paudyal@gmail.com','dadhikari32@gmail.com','roshyara.prashant@gmail.com']
+EMAIL_HOST_PASSWORD='wdyveemtsnzbihvc'
+EMAIL_USE_TLS= True
+EMAIL_PORT= 587
+
+
